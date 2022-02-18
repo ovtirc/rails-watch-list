@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+<strong>Reviews:</strong>
+<ul class="list-group">
+ <% @movie.reviews.each do |review| %>
+     <li class="list-group-item">
+      <%= "#{review.rating}/5" %>
+      <%= review.content %>
+    </li>
+ <% end %>
+</ul>
+
